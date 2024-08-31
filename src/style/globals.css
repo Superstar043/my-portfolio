@@ -60,3 +60,18 @@ body {
 .contactButton:hover {
   transform: scale(1.05);
 }
+
+.contactBox {
+  background-image: url('../../public/contact-box-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -100px;
+  clip-path: polygon(30px 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 30px);
+}
+
+.headerBack {
+  background-image: url('../../public/header_back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -50px;
+}

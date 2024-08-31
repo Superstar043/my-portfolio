@@ -9,7 +9,7 @@ const satisfy = Satisfy({
 });
 
 const GlobalHeader = () => (
-  <div className="fixed top-0 left-0 w-full">
+  <div className="fixed top-0 left-0 w-full headerBack">
     <div className="items-center justify-between flex flex-row container mx-auto py-6">
       <div className={`text-[32px] ${satisfy.className}`}>
         Christian Calderon

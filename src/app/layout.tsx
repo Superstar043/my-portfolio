@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import '../style/globals.css';
 
-import { Chakra_Petch } from 'next/font/google';
+import { Oxanium } from 'next/font/google';
 
-const mainFont = Chakra_Petch({
+const mainFont = Oxanium({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['200', '300', '400', '500', '600', '700', '800'],
   display: 'swap'
 });
 
