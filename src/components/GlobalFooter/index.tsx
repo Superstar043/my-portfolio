@@ -1,6 +1,7 @@
 import FooterItem from './FooterItem';
 
 import { Satisfy } from 'next/font/google';
+import Link from 'next/link';
 
 import { FaPaperPlane } from 'react-icons/fa';
 
@@ -12,8 +13,8 @@ const satisfy = Satisfy({
 
 const GlobalFooter = () => (
   <div className="w-full bg-gradient-to-b from-white to-green-700 py-12">
-    <div className="container mx-auto flex flex-col lg:flex-row">
-      <div className="w-full flex flex-row">
+    <div className="px-8 container mx-auto flex flex-col lg:flex-row gap-4">
+      <div className="w-full flex flex-row gap-4">
         <div className={`w-full text-3xl font-bold ${satisfy.className}`}>
           Christian Calderon
         </div>
@@ -29,10 +30,13 @@ const GlobalFooter = () => (
         <div className="text-2xl">
           Ready to create an incredible project together?
         </div>
-        <div className="bg-green-500 py-2 px-4 text-white contactButton flex flex-row gap-2 items-center">
+        <Link
+          className="bg-green-500 py-2 px-4 text-white contactButton flex flex-row gap-2 items-center"
+          href="/contact"
+        >
           Contact Me
           <FaPaperPlane />
-        </div>
+        </Link>
       </div>
     </div>
   </div>
