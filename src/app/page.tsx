@@ -6,9 +6,7 @@ const Home = () => {
   return (
     <main className="flex flex-col w-full justify-center items-center">
       <GlobalHeader />
-      <div className="pt-24 container mx-auto">
-        <Hero />
-      </div>
+      <Hero />
       <GlobalFooter />
     </main>
   );

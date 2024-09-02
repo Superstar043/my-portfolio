@@ -32,7 +32,7 @@ const GlobalHeader = () => {
   }, [menuRef]);
 
   return (
-    <div className="fixed top-0 left-0 w-full shadow-lg bg-white border-b-4 border-green-700">
+    <div className="fixed top-0 left-0 w-full shadow-lg bg-white border-b-4 border-green-700 z-[100]">
       <div className="px-8 items-center justify-between flex flex-row container mx-auto py-6">
         <div className={`text-[32px] ${satisfy.className}`}>
           Christian Calderon

@@ -29,17 +29,16 @@ body {
   }
 }
 
-.contactButton {
+.customButton {
   position: relative;
   overflow: hidden;
   color: #fff;
   text-align: center;
-  border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
-.contactButton::before {
+.customButton::before {
   content: '';
   position: absolute;
   top: -100%;
@@ -52,12 +51,12 @@ body {
   pointer-events: none;
 }
 
-.contactButton:hover::before {
+.customButton:hover::before {
   left: 150%;
   transition: all 0.5s ease-in-out;
 }
 
-.contactButton:hover {
+.customButton:hover {
   transform: scale(1.05);
 }
 
@@ -66,4 +65,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   clip-path: polygon(30px 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 30px);
+}
+
+.hero {
+  background-image: url('../../public/herobg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
